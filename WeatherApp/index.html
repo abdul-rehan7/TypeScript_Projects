@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <title>My Weather App</title>
+  </head>
+  <body class="bg-slate-800 flex justify-center text-center text-white">
+    <div class="app gradient rounded-lg md:w-[35vw] w-[90vw] md:mt-[2%] mt-[7%] h-auto flex flex-col">
+      <div class="top flex justify-evenly my-[7%] items-center mx-5">
+        <input class=" text-black search px-5 py-2 md:w-[25vw] w-[60vw]  rounded-full" type="search" />
+        <img
+        id="searchBTN"
+          class="cursor-pointer active:bg-gray-200 btn w-8 h-8 bg-white rounded-full p-2"
+          src="images/search.png"
+          alt=""
+        />
+      </div>
+
+      <div class="WEATHER flex flex-col items-center justify-center space-y-2">
+        <img class="w-[50%] md:w-[40%]" src="images/rain.png" alt="" />
+        <h1 class="temp text-5xl text-white font-bold">18&deg;C</h1>
+        <h1 class="city text-5xl text-white font-normal">Karachi</h1>
+
+        <div class="detail md:py-7 py-4 space-x-4 flex justify-center">
+          <div class="col flex space-x-2">
+            <img
+              class="mt-2 md:w-[50%] w-[45%] h-[45%]"
+              src="images/humidity.png"
+              alt=""
+            />
+            <div class="info text-left">
+              <p class="humidity text-xl font-semibold">40%</p>
+              <p class="text-xs md:w-[6vw] w-[25vw] ">humidity</p>
+            </div>
+          </div>
+          <div class="col flex space-x-2">
+            <img
+              class="mt-2 md:w-[50%] w-[45%] h-[45%]"
+              src="images/wind.png"
+              alt=""
+            />
+            <div class="info text-left">
+              <p class="wind text-xl font-semibold">20km/h</p>
+              <p class="text-xs md:w-[6vw] w-[25vw] ">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
