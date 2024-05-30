@@ -1,0 +1,23 @@
+{
+  "name": "typescript-practice-projects",
+  "version": "1.0.0",
+  "description": "\"# TypeScript_Projects\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "inquirer": "^9.2.22"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.11"
+  }
+}
